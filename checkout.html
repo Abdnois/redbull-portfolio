@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout · Red Bull</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="checkout-page">
+
+  <!-- ============ HEADER ============ -->
+  <header class="checkout-header">
+    <a class="header-logo" href="index.html">
+      <img src="https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg" alt="Red Bull" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+    </a>
+    <a class="checkout-back" href="index.html">← Back to shop</a>
+  </header>
+
+  <!-- ============ EMPTY STATE ============ -->
+  <section id="checkoutEmpty" class="checkout-empty" hidden>
+    <h1 class="checkout-title">Your cart is empty</h1>
+    <p class="sub">Add some cans before checking out.</p>
+    <a class="btn-red" href="index.html">Go shopping</a>
+  </section>
+
+  <!-- ============ MAIN CHECKOUT ============ -->
+  <main id="checkoutMain" class="checkout-wrap" hidden>
+    <div class="checkout-grid">
+
+      <!-- ---------- LEFT: FORM ---------- -->
+      <form id="checkoutForm" novalidate>
+
+        <h1 class="checkout-title">Checkout</h1>
+        <p class="sub" style="margin-bottom:36px">You're a few details away from your wings.</p>
+
+        <!-- CONTACT -->
+        <div class="form-section">
+          <h2 class="form-heading"><span class="step-num">1</span> Contact</h2>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email"
+                   placeholder="you@example.com" autocomplete="email">
+            <span class="field-error"></span>
+          </div>
+        </div>
+
+        <!-- SHIPPING -->
+        <div class="form-section">
+          <h2 class="form-heading"><span class="step-num">2</span> Shipping address</h2>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="first">First name</label>
+              <input id="first" name="first" type="text" autocomplete="given-name">
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="last">Last name</label>
+              <input id="last" name="last" type="text" autocomplete="family-name">
+              <span class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text"
+                   placeholder="123 Main St" autocomplete="street-address">
+            <span class="field-error"></span>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" autocomplete="address-level2">
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="zip">ZIP / Postcode</label>
+              <input id="zip" name="zip" type="text" autocomplete="postal-code">
+              <span class="field-error"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ PAYMENT ============ -->
+        <div class="form-section">
+          <h2 class="form-heading"><span class="step-num">3</span> Payment</h2>
+
+          <div class="pay-methods" role="radiogroup" aria-label="Payment method">
+            <label class="pay-option">
+              <input type="radio" name="payMethod" value="bank" checked>
+              <span class="pay-box">
+               <span class="pay-icon">
+  <svg viewBox="0 0 48 32" role="img" aria-label="Bank card">
+    <rect x="0" y="2" width="48" height="28" rx="5" fill="#1A1F71"/>
+    <circle cx="19" cy="16" r="8" fill="#EB001B"/>
+    <circle cx="29" cy="16" r="8" fill="#F79E1B"/>
+    <path d="M24 9.5a8 8 0 0 0 0 13 8 8 0 0 0 0-13z" fill="#FF5F00"/>
+  </svg>
+</span>
+                <span class="pay-text"><strong>Bank / Card</strong><em></em></span>
+              </span>
+            </label>
+
+            <label class="pay-option">
+              <input type="radio" name="payMethod" value="bkash">
+              <span class="pay-box">
+                <span class="pay-icon">
+  <span class="pay-brand" style="color:#E2136E">bKash</span>
+</span>
+                <span class="pay-text"><strong>bKash</strong><em></em></span>
+              </span>
+            </label>
+
+            <label class="pay-option">
+              <input type="radio" name="payMethod" value="paypal">
+              <span class="pay-box">
+                <span class="pay-icon">
+  <svg viewBox="0 0 24 24" role="img" aria-label="PayPal">
+    <path fill="#003087" d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z"/>
+    <path fill="#009CDE" d="M21.222 6.917a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/>
+  </svg>
+</span>
+                <span class="pay-text"><strong>PayPal</strong><em></em></span>
+              </span>
+            </label>
+          </div>
+
+          <!-- BANK / CARD -->
+          <div class="pay-panel" data-panel="bank">
+            <div class="field">
+              <label for="card">Card number</label>
+              <input id="card" name="card" type="text" inputmode="numeric"
+                     placeholder="4242 4242 4242 4242" autocomplete="cc-number">
+              <span class="field-error"></span>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="exp">Expiry</label>
+                <input id="exp" name="exp" type="text" inputmode="numeric"
+                       placeholder="MM/YY" autocomplete="cc-exp">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="cvc">CVC</label>
+                <input id="cvc" name="cvc" type="text" inputmode="numeric"
+                       placeholder="123" autocomplete="cc-csc">
+                <span class="field-error"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BKASH -->
+          <div class="pay-panel" data-panel="bkash" hidden>
+            <div class="field">
+              <label for="bkash">bKash account number</label>
+              <input id="bkash" name="bkash" type="text" inputmode="numeric"
+                     placeholder="01XXXXXXXXX" autocomplete="tel">
+              <span class="field-error"></span>
+            </div>
+            <p class="demo-note">
+              Your bKash mobile number is your account number. You'll receive a payment
+              request in the bKash app or via <strong>*247#</strong> to confirm with your PIN.
+            </p>
+          </div>
+
+          <!-- PAYPAL -->
+          <div class="pay-panel" data-panel="paypal" hidden>
+            <p class="demo-note">
+              You'll be redirected to PayPal to log in and approve the payment securely.
+              No card details are entered on this site.
+            </p>
+          </div>
+
+          <p class="demo-note">Demo checkout · no real payment is taken.</p>
+        </div>
+      </form>
+
+      <!-- ---------- RIGHT: ORDER SUMMARY ---------- -->
+      <aside class="order-summary">
+        <h2 class="summary-heading">Order summary</h2>
+
+        <div id="summaryItems" class="summary-items"></div>
+
+        <div class="summary-totals">
+          <div class="summary-line"><span>Subtotal</span><span id="sumSubtotal">$0.00</span></div>
+          <div class="summary-line"><span>Shipping</span><span id="sumShipping">$0.00</span></div>
+          <div class="summary-line"><span>Tax (8%)</span><span id="sumTax">$0.00</span></div>
+          <div class="summary-line summary-total"><span>Total</span><strong id="sumTotal">$0.00</strong></div>
+        </div>
+
+        <button class="place-order" type="submit" form="checkoutForm">Place order</button>
+        <p class="summary-note">Secure demo checkout · no card required</p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ============ SUCCESS ============ -->
+  <section id="checkoutSuccess" class="checkout-success" hidden>
+    <span class="success-check">✓</span>
+    <h1 class="checkout-title">Order placed!</h1>
+    <p class="sub">Thanks for flying with Red Bull. A confirmation has been sent to your email.</p>
+    <a class="btn-red" href="index.html">Back to shop</a>
+  </section>
+
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Bull Energy Drink</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23E41B23'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- ================= FLOATING HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-left">
+    <a href="#products">Shop</a>
+    <a href="#home">About Red Bull</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#products">Products</a>
+  </nav>
+  <a class="header-logo" href="#home"><img src="https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg" alt="Red Bull" referrerpolicy="no-referrer"></a>
+  <div class="header-right">
+    <button class="cart-btn" id="cartToggle" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/>
+        <path d="M2 3h3l2.4 12.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.3L21.5 7H6"/>
+      </svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ================= PINNED INTRO SCENE ================= -->
+<section class="intro-track" id="home">
+  <div class="intro-stage">
+    <div class="intro-can" id="introCan">
+      <div class="can-float">
+        <img class="can-img" src="https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/53e078bcb9/gb_ed_250ml_energy-drink_country_rgb__cold_closed_front_com_full.png/m/686x0"
+             onerror="this.onerror=null;this.src='redbull-can.png'"
+             alt="Red Bull Energy Drink can" referrerpolicy="no-referrer">
+      </div>
+    </div>
+
+    <div class="intro-text intro-a">
+      <div class="t-in" id="aIn">
+        <p class="eyebrow">The original Red Bull</p>
+        <h1>Red Bull<br>Energy Drink</h1>
+      </div>
+    </div>
+
+    <div class="intro-text intro-b">
+      <div class="t-in" id="bIn">
+        <p>
+          Red Bull Energy Drink is appreciated<br>
+          worldwide by top athletes, busy professionals,<br>
+          college students and travelers on<br>
+          long journeys.
+        </p>
+      </div>
+    </div>
+
+    <div class="intro-text intro-c">
+      <div class="t-in" id="cIn">
+        <h2>Vitalizes body<br>and mind<sup>®</sup>.</h2>
+        <p class="sub">The original Red Bull Energy Drink. Giving wiiings to people and ideas since 1987.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BENEFITS ================= -->
+<section id="benefits">
+  <div class="benefits-grid">
+    <div class="benefit-art visual-reveal">
+      <img src="https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/1400x1947/e299d817a8/4-int_multi-occassion_caucasian_portrait.png/m/768x0"
+           onerror="this.onerror=null;this.src='benefits-doodle.png'"
+           alt="Cartoon illustration of everyday moments powered by Red Bull" referrerpolicy="no-referrer">
+    </div>
+    <div>
+      <div class="benefit reveal from-right">
+        <h3>Stay alert</h3>
+        <p>Red Bull Energy Drink contains caffeine that helps to improve concentration and increase alertness.</p>
+      </div>
+      <div class="benefit reveal from-right d-1">
+        <h3>Reduce fatigue</h3>
+        <p>Red Bull Energy Drink contains B-group vitamins (niacin, pantothenic acid, B6, B12), which contribute to the reduction of tiredness and fatigue.</p>
+      </div>
+      <div class="benefit reveal from-right d-2">
+        <h3>Kickstart your day</h3>
+        <p>Red Bull Energy Drink contains sugar, a fast-absorbing form of carbohydrate involved in a wide range of biological processes and an energy source for the brain and muscles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INGREDIENTS ================= -->
+<section id="ingredients">
+  <div class="ing-pin">
+    <div class="split ing-split">
+      <div class="ing-left visual-reveal">
+        <div class="tab-pop" id="tabPop" aria-hidden="true">
+          <img src="https://www.redbull.com/energydrink/v1/resources/_next/static/media/pull-tab-aluminium.c8b161fd.png"
+               onerror="this.onerror=null;document.getElementById('tabPop').style.display='none'"
+               alt="" referrerpolicy="no-referrer">
+        </div>
+        <div class="can-float">
+          <img class="can-img" src="https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/53e078bcb9/gb_ed_250ml_energy-drink_country_rgb__cold_closed_front_com_full.png/m/686x0"
+               onerror="this.onerror=null;this.src='redbull-can.png'"
+               alt="Red Bull Energy Drink can" referrerpolicy="no-referrer">
+        </div>
+        <div class="ing-cards">
+          <article class="ing-card"><h3>Caffeine</h3><p>Each 250 ml can of Red Bull Energy Drink contains around 80 mg of caffeine. Caffeine helps to improve concentration and increase alertness.</p></article>
+          <article class="ing-card"><h3>Taurine</h3><p>Taurine is one of the most abundant amino acids in the heart and muscles. It is involved in a range of processes, including regulating water and electrolyte balance at the cellular level.</p></article>
+          <article class="ing-card"><h3>B-group vitamins</h3><p>B-group vitamins (niacin, pantothenic acid, B6, B12) contribute to the reduction of tiredness and fatigue.</p></article>
+          <article class="ing-card"><h3>Sugars</h3><p>Red Bull contains sugar, a fast-absorbing carbohydrate that fuels a wide range of biological processes — including the brain and muscles.</p></article>
+          <article class="ing-card"><h3>Water</h3><p>Water is the main ingredient of Red Bull. Dedication to its quality contributes to the crisp taste in every sip.</p></article>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow reveal from-right">Ingredients</p>
+        <h2 class="reveal from-right d-1">The formula behind<br>the energy</h2>
+        <p class="sub reveal from-right d-2" style="margin-top:22px;max-width:420px">Red Bull Energy Drink's formula is made with caffeine, taurine and essential B-vitamins.</p>
+        <div class="sizes-pill reveal d-3">
+          <span class="info">i</span>
+          <span class="label">Available sizes:</span>
+          <span class="size-chip">250 ml can</span>
+          <span class="size-chip">250 ml PET</span>
+        </div>
+        <br>
+        <button class="btn-red reveal d-4" id="openModal">See ingredients</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products">
+  <div class="products-inner">
+    <h2 class="products-title reveal">ENERGY</h2>
+    <div class="products-row" id="productsRow">
+      <!-- product cards injected by js/main.js -->
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <a class="brand" href="#home">
+        <img src="https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg" alt="Red Bull" referrerpolicy="no-referrer" style="height:28px;width:auto">
+      </a>
+      <p>The original Red Bull Energy Drink. Giving wiiings to people and ideas since 1987.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#home">Story</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#products">Products</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:miniabid7@gmail.com">miniabid7@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 — Unofficial fan-made demo. Not affiliated with or endorsed by Red Bull GmbH. All trademarks belong to their respective owners. <a href="#home" style="color:var(--gold)">Back to top ↑</a></div>
+</footer>
+
+<!-- ================= INGREDIENTS MODAL ================= -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+    <h3 id="modalTitle">What's inside</h3>
+    <p class="m-sub">Typical composition per 250 ml serving.</p>
+    <ul>
+      <li><span>Carbonated water</span><span>Base</span></li>
+      <li><span>Sugar</span><span>Carbohydrate</span></li>
+      <li><span>Caffeine</span><span>≈ 75–80 mg</span></li>
+      <li><span>Taurine</span><span>Energy blend</span></li>
+      <li><span>B-vitamins</span><span>Energy metabolism</span></li>
+    </ul>
+    <p class="note">Values are typical and may vary slightly between batches — refer to the product label for the most accurate information.</p>
+  </div>
+</div>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-head">
+    <h3>Your cart <span id="cartHeadCount">(0)</span></h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div>
+    <p class="cart-note">Taxes and shipping calculated at checkout.</p>
+    <button class="cart-checkout" id="cartCheckout" disabled>Checkout</button>
+  </div>
+</aside>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
