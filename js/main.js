@@ -7,14 +7,13 @@
   'use strict';
 
   /* ---------- PRODUCT DATA (edit here, not in HTML) ---------- */
-  const CDN = 'https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/';
   const PRODUCTS = [
     { id:'energy',    name:'Red Bull Energy Drink', price:'2.99', label:'Energy Drink',
-      img: CDN + '53e078bcb9/gb_ed_250ml_energy-drink_country_rgb__cold_closed_front_com_full.png/m/686x0' },
+      img: 'assets/redbull-energy.png' },
     { id:'sugarfree', name:'Red Bull Sugarfree',    price:'2.99', label:'Sugarfree',
-      img: CDN + '4b21f6a617/gb_sf_250ml_sugarfree_country_rgb__cold_closed_front_com_full.png/m/310x0' },
+      img: 'assets/redbull-sugarfree.png' },
     { id:'zero',      name:'Red Bull Zero',         price:'2.99', label:'Zero',
-      img: 'https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/e4d03d54d0/int_zr_250ml_energy-drink_country__cold_closed_front_com_full.png/m/310x0' }
+      img: 'assets/redbull-zero.png' }
   ];
 
   const row = document.getElementById('productsRow');
@@ -28,7 +27,7 @@
             <span class="dot-card-info"><strong>${p.label}</strong><em>$${p.price}</em></span>
           </div>
           <img class="product-img" src="${p.img}" alt="${p.name}"
-               onerror="this.onerror=null;this.src='redbull-can.png'" referrerpolicy="no-referrer">
+               referrerpolicy="no-referrer">
         </div>
         <h3>${p.name.replace('Red Bull ', 'Red Bull<br>')}</h3>
         <button class="btn-add" data-id="${p.id}" data-name="${p.name}"
